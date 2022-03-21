@@ -1,22 +1,33 @@
-# CT
+# CT(Command-line Tools)
 
-一系列在命令行使用的工具
-
-
+[简体中文](https://github.com/ruxia-TJY/CT/blob/master/README_cn.md)
 
 
+A collection of tools for using on the command-line。
 
-## 使用方式
+Maybe someone else has developed a better one,maybe my understanding of system command tools is not comprehensive,i did it when i want.
 
-将程序放在系统环境变量即可
+## how to use
 
+add to system environment.
 
+### In Linux
 
+make sure gcc has been installed and in the environment.
 
+clone and use `make` to build it, file will be build in bin\
 
-## 当前程序
+### In Windows
+use VS to open .sln file,and build it.
 
-| 名称 | 编写语言 |                    描述                    | 开源协议 |
-| :--: | :------: | :----------------------------------------: | :------: |
-| now  |    c#    | 输出当前时间日期（公历，农历，干支，生肖） |          |
+or add c# complie `csc` in environment.run make.bat to build it.
 
+## list
+
+| name | language | description | support OS |
+| :--: | :------: | :----------------------------------------: | :-----: |
+| now | c# | echo current time and date(Gregorian calendar,lunar calendar,sexagenary cycle and Zodiac) | Windows7,10 |
+| p | c | echo PATH split and newline for better view | Ubuntu |
+
+# License
+code and file in this repositories used Apache License.
