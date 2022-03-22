@@ -1,3 +1,8 @@
+/*************************************************
+ * p
+ *	split and echo "PATH" with newline for better 
+ * views.
+ *************************************************/
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
