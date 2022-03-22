@@ -15,12 +15,14 @@ add to system environment.
 
 make sure gcc has been installed and in the environment.
 
-clone and use `make` to build it, file will be build in bin\
+clone and use run `sh ./make.sh` to build it, file will be build in bin\
+
+use `sh ./make.sh clean` to clean it 
 
 ### In Windows
-use VS to open .sln file,and build it.
+use VS to open .sln to build it.
 
-or add c# complie `csc` in environment.run make.bat to build it.
+or add c# complie `csc` in environment.run `make.bat` to build it.
 
 ## list
 
@@ -28,6 +30,7 @@ or add c# complie `csc` in environment.run make.bat to build it.
 | :--: | :------: | :----------------------------------------: | :-----: |
 | now | c# | echo current time and date(Gregorian calendar,lunar calendar,sexagenary cycle and Zodiac) | Windows7,10 |
 | p | c | echo PATH split and newline for better view | Ubuntu |
+| q | bat | exit | Windows |
 
 # License
 code and file in this repositories used Apache License.
