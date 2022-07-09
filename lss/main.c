@@ -4,6 +4,7 @@
 #include <dirent.h>
 #include <unistd.h>
 #include <limits.h>
+#include "include/tColorPC.h"
 
 int readFileList(char *basePath)
 {
@@ -16,13 +17,26 @@ int readFileList(char *basePath)
     }
 
     while ((ptr = readdir(dir)) != NULL){
+        printNormal();
         if(strcmp(ptr->d_name,".") == 0 || strcmp(ptr->d_name,"..") == 0)
             continue;
 
         if(ptr->d_type == DT_DIR){
-            printf("/");
+            printBlue();
+            printf("%s",ptr->d_name);
+            printNormal();
+            printf("/\n");
         }
-        printf("%s\n",ptr->d_name);
+        else if(ptr->d_type == DT_LNK){
+            printCyan();
+            printf("%s\n",ptr->d_name);
+        }
+        else{
+            if(access(ptr->d_name,X_OK)==0){
+                printGreen();
+            }
+            printf("%s\n",ptr->d_name);
+        }
     }
     closedir(dir);
 
@@ -35,7 +49,5 @@ int main(int argc,char**argv)
     getcwd(pathBuf,sizeof(pathBuf));
 
     readFileList(pathBuf);
-
     return 0;
 }
-

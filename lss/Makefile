@@ -1,11 +1,12 @@
 TARGET=lss
 CC=gcc
 Build=../bin/
+Include=include
 
 TARGET_PATH=$(Build)$(TARGET)
 
-$(TARGET):main.c
-	$(CC) -o $(TARGET_PATH) $^
+$(TARGET):main.c tColorPC.c
+	$(CC) -o $(TARGET_PATH) -I$(Include) $^
 
 .PHONY:clean
 clean:
