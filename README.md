@@ -9,7 +9,7 @@ Maybe someone else has developed a better one,maybe my understanding of system c
 
 ## how to use
 
-add to system environment.
+add to system environment after compiler.
 
 ### In Linux
 
@@ -20,7 +20,8 @@ clone and use run `sh ./make.sh` to build it, file will be build in bin\
 use `sh ./make.sh clean` to clean it 
 
 ### In Windows
-use VS to open .sln to build it.
+
+open .sln and build it.
 
 or add c# complie `csc` in environment.run `make.bat` to build it.
 
@@ -29,8 +30,9 @@ or add c# complie `csc` in environment.run `make.bat` to build it.
 | name | language | description | support OS |
 | :--: | :------: | :----------------------------------------: | :-----: |
 | now | c# | echo current time and date(Gregorian calendar,lunar calendar,sexagenary cycle and Zodiac) | Windows7,10 |
-| p | c | echo PATH split and newline for better view | Ubuntu |
+| p | c | echo PATH split and newline for better view | Linux |
 | q | bat | exit | Windows |
+| lss | c | echo file list split by '\n' | Linux |
 
 # License
 code and file in this repositories used Apache License.

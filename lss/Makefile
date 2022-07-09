@@ -1,4 +1,4 @@
-TARGET=p
+TARGET=lss
 CC=gcc
 Build=../bin/
 

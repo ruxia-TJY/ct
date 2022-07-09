@@ -8,6 +8,8 @@ fi
 # cd and make
 cd p && make
 cd ../
+cd lss && make
+cd ../
 
 
 
