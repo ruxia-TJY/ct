@@ -8,10 +8,6 @@ fi
 # cd and make
 cd p && make
 cd ../
-cd lss && make
-cd ../
-
-
 
 # clean
 if [ $# -gt 0 ];then

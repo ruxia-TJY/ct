@@ -33,7 +33,6 @@
 | now  |    c#    | 输出当前时间日期（公历，农历，干支，生肖） | Windows 7,10|
 | p | c | 换行输出PATH变量 | Linux |
 | q | bat | exit | Windows |
-| lss | c | 使用换行输出文件列表 | Linux |
 
 ## 协议
 代码和文件在本仓库的使用Apache协议。

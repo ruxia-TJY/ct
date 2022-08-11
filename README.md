@@ -32,7 +32,6 @@ or add c# complie `csc` in environment.run `make.bat` to build it.
 | now | c# | echo current time and date(Gregorian calendar,lunar calendar,sexagenary cycle and Zodiac) | Windows7,10 |
 | p | c | echo PATH split and newline for better view | Linux |
 | q | bat | exit | Windows |
-| lss | c | echo file list split by '\n' | Linux |
 
 # License
 code and file in this repositories used Apache License.
